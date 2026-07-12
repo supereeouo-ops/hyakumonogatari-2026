@@ -709,17 +709,28 @@ h3 {
   .site-header {
     position: relative;
     overflow-x: auto;
-    padding: 14px 16px;
+    min-height: 128px;
+    padding: 14px 16px 14px;
   }
 
   .brand {
+    position: absolute;
+    top: 14px;
+    right: 16px;
     flex: 0 0 auto;
+    min-width: 0;
+  }
+
+  .brand-logo {
+    width: 72px;
+    transform: none;
   }
 
   .site-nav {
     flex-wrap: nowrap;
     justify-content: flex-start;
     width: 100%;
+    margin-top: 54px;
     overflow-x: auto;
     scrollbar-width: none;
   }
