@@ -20,12 +20,18 @@
 }
 
 html {
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-x: clip;
   scroll-behavior: smooth;
 }
 
 body {
   position: relative;
   margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-x: clip;
   background: var(--ink);
   color: var(--text);
   font-family:
@@ -701,10 +707,28 @@ h3 {
 @media (max-width: 560px) {
   .site-header {
     position: relative;
+    overflow-x: auto;
     padding: 14px 16px;
   }
 
+  .brand {
+    flex: 0 0 auto;
+  }
+
+  .site-nav {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .site-nav::-webkit-scrollbar {
+    display: none;
+  }
+
   .site-nav a {
+    flex: 0 0 auto;
     padding: 7px 8px;
     font-size: 0.86rem;
   }
@@ -723,12 +747,27 @@ h3 {
     transform: translate(-50%, -50%);
   }
 
+  .hero-content {
+    min-width: 0;
+    max-width: 100%;
+  }
+
   h1 {
-    font-size: 3rem;
+    font-size: clamp(2.35rem, 12vw, 3rem);
+    word-break: normal;
   }
 
   .title-line {
+    display: block;
+    max-width: 4.6em;
     white-space: normal;
+    word-break: normal;
+  }
+
+  .hero-copy {
+    max-width: 100%;
+    font-size: clamp(1.02rem, 5vw, 1.18rem);
+    word-break: normal;
   }
 
   .hero-actions {
@@ -737,6 +776,7 @@ h3 {
   }
 
   .button {
+    max-width: 100%;
     width: 100%;
   }
 
