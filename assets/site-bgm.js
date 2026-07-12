@@ -12,7 +12,7 @@
       button.setAttribute("aria-pressed", isPlaying ? "true" : "false");
     };
 
-    audio.volume = 0.05;
+    audio.volume = 0.1;
     audio.loop = true;
 
     const play = () => {
