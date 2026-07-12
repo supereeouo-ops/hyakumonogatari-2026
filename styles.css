@@ -861,7 +861,7 @@ h3 {
 
 .vote-prize-card {
   min-height: 0;
-  height: 172px;
+  height: 208px;
 }
 
 .vote-prize-card .vote-prize-list {
@@ -870,7 +870,7 @@ h3 {
 
 .vote-prize-card .vote-prize-list div {
   min-height: 0;
-  padding: 16px 24px;
+  padding: 18px 24px;
 }
 
 .submission-info-card,
