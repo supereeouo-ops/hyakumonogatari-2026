@@ -276,7 +276,7 @@ h3 {
 .button.primary,
 .button.secondary {
   border-color: rgba(147, 24, 31, 0.86);
-  background: linear-gradient(180deg, var(--button-muted), #43090d);
+  background: linear-gradient(180deg, rgba(111, 19, 24, 0.7), rgba(67, 9, 13, 0.7));
   color: #f7eee8;
   box-shadow: 0 14px 30px rgba(90, 10, 14, 0.25);
 }
@@ -284,7 +284,7 @@ h3 {
 .button:hover,
 .button:focus-visible {
   border-color: rgba(214, 21, 32, 0.95);
-  background: linear-gradient(180deg, #d31520, #8f0911);
+  background: linear-gradient(180deg, rgba(211, 21, 32, 0.82), rgba(143, 9, 17, 0.82));
   color: #fff9f5;
   box-shadow: 0 16px 36px rgba(143, 9, 17, 0.36);
 }
@@ -302,7 +302,7 @@ h3 {
 
 .event-facts div {
   padding: 14px 16px;
-  background: rgba(5, 5, 5, 0.64);
+  background: rgba(5, 5, 5, 0.85);
 }
 
 .event-facts dt {
@@ -329,7 +329,7 @@ h3 {
   margin-top: 12px;
   padding: 8px 12px;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(5, 5, 5, 0.34);
+  background: rgba(5, 5, 5, 0.85);
   font-family:
     "Noto Sans TC",
     "Microsoft JhengHei",
@@ -468,7 +468,7 @@ h3 {
   border-radius: 8px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.018)),
-    rgba(16, 16, 16, 0.92);
+    rgba(16, 16, 16, 0.85);
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
   transition:
     border-color 160ms ease,
@@ -508,7 +508,7 @@ h3 {
   border-color: rgba(255, 255, 255, 0.34);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.068), rgba(255, 255, 255, 0.026)),
-    rgba(22, 18, 18, 0.95);
+    rgba(22, 18, 18, 0.85);
   box-shadow:
     0 18px 32px rgba(0, 0, 0, 0.26),
     0 0 0 1px rgba(59, 216, 255, 0.04);
@@ -609,7 +609,7 @@ h3 {
   padding: 20px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(5, 5, 5, 0.54);
+  background: rgba(5, 5, 5, 0.85);
   text-decoration: none;
 }
 
