@@ -48,8 +48,8 @@ body::before {
   inset: 0;
   z-index: -2;
   background:
-    linear-gradient(180deg, rgba(5, 5, 5, 0.42), rgba(5, 5, 5, 0.78)),
-    linear-gradient(90deg, rgba(5, 5, 5, 0.12), rgba(5, 5, 5, 0.58)),
+    linear-gradient(180deg, rgba(5, 5, 5, 0.17), rgba(5, 5, 5, 0.31)),
+    linear-gradient(90deg, rgba(5, 5, 5, 0.05), rgba(5, 5, 5, 0.23)),
     url("./assets/main-visual-background.jpg") center top / cover no-repeat,
     var(--ink);
   pointer-events: none;
@@ -158,10 +158,10 @@ a {
 
 .hero-bg-logo {
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 50%;
   z-index: 0;
-  width: min(1534px, 81vw);
+  width: min(1227px, 64.8vw);
   height: auto;
   opacity: 0.59;
   transform: translate(-50%, -50%);
@@ -709,28 +709,17 @@ h3 {
   .site-header {
     position: relative;
     overflow-x: auto;
-    min-height: 128px;
-    padding: 14px 16px 14px;
+    padding: 14px 16px;
   }
 
   .brand {
-    position: absolute;
-    top: 14px;
-    right: 16px;
     flex: 0 0 auto;
-    min-width: 0;
-  }
-
-  .brand-logo {
-    width: 72px;
-    transform: none;
   }
 
   .site-nav {
     flex-wrap: nowrap;
     justify-content: flex-start;
     width: 100%;
-    margin-top: 54px;
     overflow-x: auto;
     scrollbar-width: none;
   }
@@ -752,11 +741,12 @@ h3 {
   }
 
   .hero-bg-logo {
-    top: 50%;
-    left: 50%;
-    width: min(988px, 140vw);
+    top: 18px;
+    right: 14px;
+    left: auto;
+    width: min(260px, 52vw);
     opacity: 0.57;
-    transform: translate(-50%, -50%);
+    transform: none;
   }
 
   .hero-content {
