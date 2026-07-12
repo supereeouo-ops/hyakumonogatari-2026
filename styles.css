@@ -368,43 +368,10 @@ h3 {
   display: grid;
   align-items: end;
   padding: 90px 0;
-  overflow: hidden;
-  background: var(--ink);
-}
-
-.poster-scene {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.poster-scene::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 3;
   background:
     linear-gradient(90deg, rgba(5, 5, 5, 0.92), rgba(5, 5, 5, 0.38) 58%, rgba(5, 5, 5, 0.84)),
-    linear-gradient(180deg, var(--ink), rgba(5, 5, 5, 0.2), var(--ink));
-}
-
-.poster-artboard {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  transform: translate(-50%, -50%);
-}
-
-.poster-figure {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    linear-gradient(180deg, var(--ink), rgba(5, 5, 5, 0.2), var(--ink)),
+    url("./assets/poster-figure.png") center / cover no-repeat;
 }
 
 .poster-intro-inner {
@@ -713,11 +680,6 @@ h3 {
   .action-number {
     margin-bottom: 22px;
   }
-
-  .poster-artboard {
-    width: auto;
-    height: 100%;
-  }
 }
 
 @media (orientation: portrait) {
@@ -795,15 +757,11 @@ h3 {
     word-break: normal;
   }
 
-  #hero-title .title-line,
-  .poster-intro .title-line {
+  .title-line {
     display: block;
+    max-width: 4.6em;
     white-space: normal;
     word-break: normal;
-  }
-
-  #hero-title .title-line {
-    max-width: 4.6em;
   }
 
   .hero-copy {
@@ -825,25 +783,12 @@ h3 {
   .poster-intro {
     min-height: 560px;
     padding: 70px 0;
-  }
-
-  .poster-artboard {
-    width: auto;
-    height: 100%;
-  }
-
-  .poster-intro h2 {
-    font-size: clamp(1.85rem, 8vw, 2.2rem);
-  }
-
-  .action-grid p,
-  .timeline p {
-    word-break: normal;
+    background-position: center;
   }
 
   .poster-candle-stack {
     top: 64%;
-    left: 50%;
+    left: 64%;
     width: 84px;
   }
 
