@@ -1142,8 +1142,19 @@ h3 {
 
   .hero {
     min-height: auto;
+    grid-template-rows: calc(100svh - 150px) auto;
     padding: 0 18px 56px;
     background-position: center top;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  dd,
+  strong {
+    overflow-wrap: break-word;
+    word-break: normal;
   }
 
   .subpage-hero {
@@ -1175,6 +1186,10 @@ h3 {
   .info-row p,
   .prize-card p,
   .vote-note-card p,
+  .prose p,
+  .poster-intro p,
+  .hero-copy,
+  .page-summary,
   .quick-links span,
   .quick-links strong,
   .event-facts dd,
@@ -1191,6 +1206,7 @@ h3 {
     display: block;
     width: min(90vw, 520px);
     max-width: 90vw;
+    transform: translateY(-7svh);
   }
 
   .hero-content {
