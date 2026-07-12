@@ -680,6 +680,7 @@ h3 {
   .action-number {
     margin-bottom: 22px;
   }
+
 }
 
 @media (orientation: portrait) {
@@ -757,11 +758,15 @@ h3 {
     word-break: normal;
   }
 
-  .title-line {
+  #hero-title .title-line,
+  .poster-intro .title-line {
     display: block;
-    max-width: 4.6em;
     white-space: normal;
     word-break: normal;
+  }
+
+  #hero-title .title-line {
+    max-width: 4.6em;
   }
 
   .hero-copy {
@@ -783,13 +788,19 @@ h3 {
   .poster-intro {
     min-height: 560px;
     padding: 70px 0;
-    background-position: center;
+  }
+
+  .poster-intro h2 {
+    font-size: clamp(1.85rem, 8vw, 2.2rem);
+  }
+
+  .action-grid p,
+  .timeline p {
+    word-break: normal;
   }
 
   .poster-candle-stack {
-    top: 64%;
-    left: 64%;
-    width: 84px;
+    display: none;
   }
 
   .section-band {
