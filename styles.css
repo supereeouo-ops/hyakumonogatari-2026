@@ -24,6 +24,8 @@ html {
   overflow-x: hidden;
   overflow-x: clip;
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -741,12 +743,7 @@ h3 {
   }
 
   .hero-bg-logo {
-    top: 18px;
-    right: 14px;
-    left: auto;
-    width: min(260px, 52vw);
-    opacity: 0.57;
-    transform: none;
+    display: none;
   }
 
   .hero-content {
