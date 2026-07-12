@@ -861,7 +861,7 @@ h3 {
 
 .vote-prize-card {
   min-height: 0;
-  height: 208px;
+  height: 256px;
 }
 
 .vote-prize-card .vote-prize-list {
@@ -870,7 +870,7 @@ h3 {
 
 .vote-prize-card .vote-prize-list div {
   min-height: 0;
-  padding: 18px 24px;
+  padding: 20px 24px;
 }
 
 .submission-info-card,
@@ -1206,7 +1206,7 @@ h3 {
     display: block;
     width: min(90vw, 520px);
     max-width: 90vw;
-    transform: translateY(-7svh);
+    transform: translateY(-4.5svh);
   }
 
   .hero-content {
