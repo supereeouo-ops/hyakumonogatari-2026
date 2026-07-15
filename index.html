@@ -26,6 +26,7 @@
         <a href="./submission.html">投稿方法</a>
         <span class="nav-disabled" aria-disabled="true">百物語節目表</span>
         <span class="nav-disabled" aria-disabled="true">公開贊助招募</span>
+        <a href="./partners.html">合作夥伴</a>
         <a href="./vote.html">投票抽獎</a>
         <span class="nav-disabled" aria-disabled="true">得獎名單</span>
       </nav>
@@ -33,7 +34,14 @@
 
     <main id="home">
       <section class="hero" aria-labelledby="hero-title">
-        <img class="hero-bg-logo" src="./assets/ee-logo-nav.png" alt="" aria-hidden="true" />
+        <div class="hero-logo-stack" aria-hidden="true">
+          <span class="hero-bg-logo-frame">
+            <img class="hero-bg-logo" src="./assets/1k.webp" alt="" />
+          </span>
+          <span class="hero-sub-logo-frame">
+            <img class="hero-sub-logo" src="./assets/1K_2.png" alt="" />
+          </span>
+        </div>
         <div class="hero-shade"></div>
         <div class="hero-content">
           <p class="eyebrow">台灣 VT 百鬼物語</p>
@@ -120,7 +128,7 @@
             <article>
               <span class="action-number">01</span>
               <h3>共計六夜，百則怪談</h3>
-              <p>查看節目表收看開幕特別直播到最後一個鬼故事。</p>
+              <p>查看節目表，<br />並從開幕特別直播收看到最後一個鬼故事。</p>
             </article>
             <article>
               <span class="action-number">02</span>
@@ -130,7 +138,7 @@
             <article>
               <span class="action-number">03</span>
               <h3>超多抽獎活動</h3>
-              <p>活動設有各式各樣抽獎活動，詳情請見「<a class="inline-link" href="./vote.html">投票抽獎</a>」。</p>
+              <p>活動設有各式各樣抽獎活動，<br />詳情請見「<a class="inline-link" href="./vote.html">投票抽獎</a>」。</p>
             </article>
           </div>
         </div>
@@ -207,17 +215,20 @@
       <div class="footer-sponsors" aria-label="贊助單位">
         <span class="footer-sponsor-label">贊助單位</span>
         <div class="footer-sponsor-logos">
+          <a class="footer-sponsor-logo footer-sponsor-logo-keychron" href="https://www.instagram.com/keychron_taiwan/" target="_blank" rel="noreferrer" aria-label="Keychron Taiwan Instagram">
+            <img src="./assets/keychron-badge.png" alt="Keychron" />
+          </a>
           <a class="footer-sponsor-logo footer-sponsor-logo-soundtide" href="https://www.instagram.com/soundtide_/" target="_blank" rel="noreferrer" aria-label="Soundtide 聲潮 Instagram">
             <img src="./assets/soundtide2.jpg" alt="Soundtide 聲潮" />
           </a>
           <a class="footer-sponsor-logo footer-sponsor-logo-escer" href="https://www.instagram.com/escer_studio/" target="_blank" rel="noreferrer" aria-label="異世客 ESCER Instagram">
-            <img src="./assets/escer-logo.png" alt="異世客 ESCER" />
+            <img src="./assets/escer-logo-cropped.png" alt="異世客 ESCER" />
           </a>
         </div>
       </div>
     </footer>
     <audio class="site-bgm" src="./assets/bgm.wav" loop preload="auto" aria-hidden="true"></audio>
-    <button class="site-bgm-toggle" type="button" aria-pressed="false">音樂 OFF</button>
+    <button class="site-bgm-toggle" type="button" aria-pressed="true">音樂 ON</button>
     <script src="./assets/site-bgm.js" defer></script>
   </body>
 </html>
